@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- <meta name="keywords" content="kjhjkl,uiyiuy,"> -->
+    </head>  
+    <body>
+        <div class="app">
+            <header>
+                <h1>   
+                    Entreprise ACME
+                    <br>
+                    Formulaire de commande matériel
+                </h1>
+            </header>
+            <main>
+                <form action="retour.php" method="get">
+
+                    <fieldset>
+                        <legend>Vos coordonnées</legend>
+                        <div>
+                            <label for="firstName">Prénom</label>
+                            <input type="text" name="firstName" id="firstName">
+                        </div>
+                        <div>
+                            <label for="lastName">Nom</label>
+                            <input type="text" name="lastName" id="lastName">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Voulez-vous recevoir nos publicités?</legend>
+                        <div>
+                            <input type="radio" name="pub" id="pub_yes" value="yes" checked> <label for="pub_yes">Oui</label>
+                            <br/>
+                            <input type="radio" name="pub" id="pub_no" value="no"> <label for="pub_no">Non</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Cochez les articles que vous commandez (plusieurs choix possible)</legend>
+                        <div>
+                            <input type="checkbox" name="orders[]" id="order_enclume" value="Enclume"> <label for="order_enclume">Enclume</label>
+                            <br/>
+                            <input type="checkbox" name="orders[]" id="order_patins" value="Patins à roulettes fusées"> <label for="order_patins">Patins à roulettes fusées</label>
+                            <br/>
+                            <input type="checkbox" name="orders[]" id="order_tremplin" value="Tremplin géant"> <label for="order_tremplin">Tremplin géant</label>
+                            <br/>
+                            <input type="checkbox" name="orders[]" id="order_rails" value="Rails de train"> <label for="order_rails">Rails de train</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Offre promotionnelle (Choisissez un cadeau)</legend>
+                        <select name="gift">
+                            <option value="Coyotte en peluche">Coyotte en peluche</option>
+                            <option value="Coyotte en sucre">Coyotte en sucre</option>
+                            <option value="Coyotte en plastique">Coyotte en plastique</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Vos commentaires</legend>
+                        <textarea name="comment" rows="4"></textarea>
+                    </fieldset>
+
+                    <div>
+                        <input type="submit">
+                    </div>
+                </form>
+            </main>
+        </div>
+    </body>
+</html>
